@@ -19,7 +19,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'w-blue': '#00f0ff',
+                        'w-blue': '#00f0ff', /* Cyan Accent */
                         'w-dark': '#02040a',
                         'w-slate': '#0f172a'
                     },
@@ -77,6 +77,7 @@
     </div>
 
     <main>
+
         <section id="hero" class="relative min-h-screen flex flex-col justify-center px-6 md:px-24 pt-24 pb-12 overflow-hidden">
             <div class="absolute right-[-10%] top-1/4 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-cyan-600/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none animate-pulse"></div>
             <div class="absolute left-[-10%] bottom-0 w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-blue-800/20 rounded-full blur-[60px] md:blur-[100px] pointer-events-none"></div>
@@ -108,12 +109,14 @@
 
         <section id="about" class="py-20 md:py-48 px-6 md:px-24 relative">
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#02040a] via-[#050a14] to-[#02040a] -z-10"></div>
+            
             <div class="max-w-7xl mx-auto">
                 <div class="marquee-wrapper overflow-hidden mb-16 md:mb-24 opacity-20">
-                    <div class="marquee-content whitespace-nowrap text-[12vw] md:text-[8vw] font-eng font-black leading-none text-cyan-900">
+                    <div class="marquee-content whitespace-nowrap text-[12vw] md:text-[8vw] font-eng font-black leading-none text-cyan-900" style="transform: translateX(0);">
                         EDUCATION MARKETING AI CONSULTING INNOVATION
                     </div>
                 </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
                     <div class="md:col-span-4 sticky top-32">
                         <h2 class="text-xs font-eng tracking-[0.2em] text-cyan-400 mb-6 flex items-center gap-2">
@@ -131,7 +134,9 @@
                                     "Redefine the Standard."
                                 </p>
                             </div>
+
                             <div class="w-full h-[1px] bg-gray-800"></div>
+
                             <div class="prose prose-invert prose-lg">
                                 <p class="text-base md:text-lg text-gray-300 leading-relaxed font-light">
                                     私たちは<strong class="text-white font-medium">教育・マーケティング・AI</strong>の3軸で、複雑化する現代社会に「最適解」を提示します。
@@ -154,53 +159,89 @@
                         3つのコアコンピタンス。
                     </p>
                 </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="service-card group relative min-h-[480px] bg-white/[0.03] border border-white/10 p-6 md:p-8 flex flex-col justify-between hover:bg-white/[0.05] hover:border-cyan-500/50 transition-all duration-500 overflow-hidden rounded-sm" data-cursor="hover">
                         <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute -right-10 -top-10 w-32 h-32 md:w-40 md:h-40 bg-cyan-500/20 rounded-full blur-3xl group-hover:bg-cyan-400/30 transition-all duration-500"></div>
+                        
                         <div class="relative z-10">
                             <span class="text-xs font-eng border border-cyan-500/30 text-cyan-300 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm">01</span>
-                            <h3 class="text-2xl md:text-3xl font-eng mt-6 md:mt-8 font-semibold text-white group-hover:text-cyan-200 transition-colors">Educational<br>Innovation</h3>
+                            <h3 class="text-2xl md:text-3xl font-eng mt-6 md:mt-8 font-semibold text-white group-hover:text-cyan-200 transition-colors">
+                                Educational<br>Innovation
+                            </h3>
+                            <h4 class="text-xs md:text-sm text-cyan-100/70 mt-2 tracking-wide font-medium">教育コンテンツ・学習指導</h4>
                         </div>
+                        
                         <div class="relative z-10 mt-8">
-                            <p class="text-sm md:text-base leading-relaxed mb-6 text-gray-400 group-hover:text-gray-200">
-                                認知科学と最新テクノロジーを融合させた、次世代の学習プログラムを提供。
-                            </p>
-                            <ul class="text-xs text-cyan-400/90 space-y-3">
-                                <li class="flex items-center gap-2">● 教育コンテンツの企画・製作</li>
-                                <li class="flex items-center gap-2">● 各種メディアによる学習指導</li>
-                            </ul>
+                            <div class="text-gray-300 transition-colors duration-300">
+                                <p class="text-sm md:text-base leading-relaxed mb-6 text-gray-400 group-hover:text-gray-200">
+                                    認知科学と最新テクノロジーを融合させた、次世代の学習プログラムを提供。
+                                    「個」のポテンシャルを最大化し、自走できる人材を育成します。
+                                </p>
+                                <div class="w-full h-[1px] bg-white/10 mb-4 group-hover:bg-cyan-500/50 transition-colors"></div>
+                                <ul class="text-xs text-cyan-400/90 space-y-3 tracking-wide">
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-cyan-400 rounded-full shadow-[0_0_5px_#00f0ff]"></div> 教育コンテンツの企画・製作</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-cyan-400 rounded-full shadow-[0_0_5px_#00f0ff]"></div> 各種メディアによる学習指導</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-cyan-400 rounded-full shadow-[0_0_5px_#00f0ff]"></div> 実践型スキル習得・コーチング</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
                     <div class="service-card group relative min-h-[480px] bg-white/[0.03] border border-white/10 p-6 md:p-8 flex flex-col justify-between hover:bg-white/[0.05] hover:border-blue-500/50 transition-all duration-500 overflow-hidden rounded-sm" data-cursor="hover">
                          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute -right-10 -top-10 w-32 h-32 md:w-40 md:h-40 bg-blue-500/20 rounded-full blur-3xl group-hover:bg-blue-400/30 transition-all duration-500"></div>
+                        
                         <div class="relative z-10">
                             <span class="text-xs font-eng border border-blue-500/30 text-blue-300 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm">02</span>
-                            <h3 class="text-2xl md:text-3xl font-eng mt-6 md:mt-8 font-semibold text-white group-hover:text-blue-200 transition-colors">Marketing<br>Strategy</h3>
+                            <h3 class="text-2xl md:text-3xl font-eng mt-6 md:mt-8 font-semibold text-white group-hover:text-blue-200 transition-colors">
+                                Marketing<br>Strategy
+                            </h3>
+                            <h4 class="text-xs md:text-sm text-blue-100/70 mt-2 tracking-wide font-medium">次世代マーケティング支援</h4>
                         </div>
+                        
                         <div class="relative z-10 mt-8">
-                            <p class="text-sm md:text-base leading-relaxed mb-6 text-gray-400 group-hover:text-gray-200">
-                                データドリブンな解析と、心を動かすクリエイティブの融合。
-                            </p>
-                            <ul class="text-xs text-blue-400/90 space-y-3">
-                                <li class="flex items-center gap-2">● Web提供情報の企画・立案</li>
-                                <li class="flex items-center gap-2">● デジタルコンテンツ制作・運用</li>
-                            </ul>
+                             <div class="text-gray-300 transition-colors duration-300">
+                                <p class="text-sm md:text-base leading-relaxed mb-6 text-gray-400 group-hover:text-gray-200">
+                                    データドリブンな解析と、心を動かすクリエイティブの融合。
+                                    AIを活用した市場予測により、競合を凌駕するグロースハックを実現します。
+                                </p>
+                                <div class="w-full h-[1px] bg-white/10 mb-4 group-hover:bg-blue-500/50 transition-colors"></div>
+                                <ul class="text-xs text-blue-400/90 space-y-3 tracking-wide">
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-400 rounded-full shadow-[0_0_5px_#3b82f6]"></div> Web提供情報の企画・立案</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-400 rounded-full shadow-[0_0_5px_#3b82f6]"></div> デジタルコンテンツ制作・運用</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-400 rounded-full shadow-[0_0_5px_#3b82f6]"></div> 情報発信戦略プロデュース</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
                     <div class="service-card group relative min-h-[480px] bg-white/[0.03] border border-white/10 p-6 md:p-8 flex flex-col justify-between hover:bg-white/[0.05] hover:border-indigo-500/50 transition-all duration-500 overflow-hidden rounded-sm" data-cursor="hover">
                         <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute -right-10 -top-10 w-32 h-32 md:w-40 md:h-40 bg-indigo-500/20 rounded-full blur-3xl group-hover:bg-indigo-400/30 transition-all duration-500"></div>
+                        
                         <div class="relative z-10">
                             <span class="text-xs font-eng border border-indigo-500/30 text-indigo-300 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm">03</span>
-                            <h3 class="text-2xl md:text-3xl font-eng mt-6 md:mt-8 font-semibold text-white group-hover:text-indigo-200 transition-colors">ICT & AI<br>Consulting</h3>
+                            <h3 class="text-2xl md:text-3xl font-eng mt-6 md:mt-8 font-semibold text-white group-hover:text-indigo-200 transition-colors">
+                                ICT & AI<br>Consulting
+                            </h3>
+                            <h4 class="text-xs md:text-sm text-indigo-100/70 mt-2 tracking-wide font-medium">ICT・AIコンサルティング</h4>
                         </div>
+                        
                         <div class="relative z-10 mt-8">
-                            <p class="text-sm md:text-base leading-relaxed mb-6 text-gray-400 group-hover:text-gray-200">
-                                意思決定スピードと生産性を向上させるICTソリューション。
-                            </p>
-                            <ul class="text-xs text-indigo-400/90 space-y-3">
-                                <li class="flex items-center gap-2">● 業務効率化コンサルティング</li>
-                                <li class="flex items-center gap-2">● DX推進・システム構築支援</li>
-                            </ul>
+                            <div class="text-gray-300 transition-colors duration-300">
+                                <p class="text-sm md:text-base leading-relaxed mb-6 text-gray-400 group-hover:text-gray-200">
+                                    ビジネスプロセスのDXから、生成AIの導入支援まで。
+                                    最先端ICTソリューションで意思決定スピードと生産性を向上させます。
+                                </p>
+                                <div class="w-full h-[1px] bg-white/10 mb-4 group-hover:bg-indigo-500/50 transition-colors"></div>
+                                <ul class="text-xs text-indigo-400/90 space-y-3 tracking-wide">
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-400 rounded-full shadow-[0_0_5px_#6366f1]"></div> ICT/AI導入による業務改善</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-400 rounded-full shadow-[0_0_5px_#6366f1]"></div> 業務効率化コンサルティング</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-400 rounded-full shadow-[0_0_5px_#6366f1]"></div> DX推進・システム構築支援</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,53 +249,78 @@
         </section>
 
         <section id="contact" class="py-24 md:py-32 px-6 md:px-24 bg-gradient-to-b from-[#02040a] to-[#081020] relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[800px] h-[300px] md:h-[800px] bg-cyan-900/10 rounded-full blur-[60px] md:blur-[100px] pointer-events-none"></div>
+
             <div class="max-w-4xl mx-auto text-center relative z-10">
                 <p class="font-eng tracking-widest text-cyan-400 mb-6 text-xs md:text-sm">CONTACT US</p>
                 <h2 class="text-4xl sm:text-5xl md:text-8xl font-eng font-bold tracking-tighter mb-8 md:mb-12 leading-tight">
                     WEAVE THE<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">FUTURE.</span>
                 </h2>
+                <p class="text-gray-400 mb-12 md:mb-16 max-w-xl mx-auto text-sm md:text-base">
+                    教育の進化、市場の創造、技術の実装。<br>
+                    株式会社Wと共に、次なる時代を創りませんか。
+                </p>
                 <a href="mailto:info@w-inc.jp" class="text-2xl md:text-5xl font-eng border-b border-gray-700 pb-2 hover:text-cyan-400 hover:border-cyan-400 transition-colors inline-block hover-trigger" data-cursor="hover">
                     info@w-inc.jp
                 </a>
             </div>
         </section>
+
     </main>
 
     <footer class="px-6 md:px-12 py-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-end bg-[#02040a] gap-8">
-        <div>
+        <div class="mb-0">
             <h2 class="text-3xl font-eng font-bold tracking-tight mb-2">W.</h2>
-            <p class="text-xs text-gray-500">© 2025 W Inc. All Rights Reserved.</p>
+            <p class="text-xs text-gray-500">© 2024 W Inc. All Rights Reserved.</p>
         </div>
-        <div class="flex gap-8">
-            <a href="#" class="text-xs font-eng text-gray-400 hover:text-cyan-400">PRIVACY POLICY</a>
-            <a href="#" class="text-xs font-eng text-gray-400 hover:text-cyan-400">CORPORATE PROFILE</a>
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 w-full md:w-auto">
+            <a href="#" class="text-xs font-eng text-gray-400 hover:text-cyan-400 transition-colors hover-trigger" data-cursor="hover">PRIVACY POLICY</a>
+            <a href="#" class="text-xs font-eng text-gray-400 hover:text-cyan-400 transition-colors hover-trigger" data-cursor="hover">CORPORATE PROFILE</a>
         </div>
     </footer>
 
     <script>
-        // --- Animation Scripts ---
+        // --- 1. Loader Animation ---
         document.addEventListener("DOMContentLoaded", () => {
             const loader = document.getElementById('loader');
             const bar = document.getElementById('loader-bar');
             const percent = document.getElementById('loader-percent');
             let progress = 0;
+
             const interval = setInterval(() => {
-                progress += Math.random() * 10;
+                progress += Math.random() * 5;
                 if (progress > 100) progress = 100;
                 bar.style.width = `${progress}%`;
                 percent.innerText = `${Math.floor(progress)}%`;
+
                 if (progress === 100) {
                     clearInterval(interval);
-                    gsap.to(loader, { yPercent: -100, duration: 1, ease: "power4.inOut", delay: 0.5, onComplete: initAnimations });
+                    gsap.to(loader, {
+                        yPercent: -100,
+                        duration: 1,
+                        ease: "power4.inOut",
+                        delay: 0.5,
+                        onComplete: initAnimations
+                    });
                 }
             }, 50);
         });
 
+        // --- 2. Custom Cursor Logic ---
         const cursor = document.getElementById('cursor');
         const cursorDot = document.getElementById('cursor-dot');
         let mouseX = 0, mouseY = 0;
         let cursorX = 0, cursorY = 0;
-        document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; gsap.to(cursorDot, { x: mouseX, y: mouseY, duration: 0 }); });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // Dot follows immediately
+            gsap.to(cursorDot, { x: mouseX, y: mouseY, duration: 0 });
+        });
+
+        // Smooth follow for the main circle
         gsap.ticker.add(() => {
             const dt = 1.0 - Math.pow(1.0 - 0.2, gsap.ticker.deltaRatio());
             cursorX += (mouseX - cursorX) * dt;
@@ -262,38 +328,195 @@
             gsap.set(cursor, { x: cursorX, y: cursorY });
         });
 
+        // Hover effects
+        const hoverTriggers = document.querySelectorAll('.hover-trigger');
+        hoverTriggers.forEach(trigger => {
+            trigger.addEventListener('mouseenter', () => {
+                const type = trigger.getAttribute('data-cursor');
+                if (type === 'hover') {
+                    gsap.to(cursor, { width: 60, height: 60, backgroundColor: 'rgba(0, 240, 255, 0.1)', borderColor: 'transparent', duration: 0.3 });
+                }
+            });
+            trigger.addEventListener('mouseleave', () => {
+                gsap.to(cursor, { width: 20, height: 20, backgroundColor: 'transparent', borderColor: 'rgba(0, 240, 255, 0.5)', mixBlendMode: 'difference', duration: 0.3 });
+            });
+        });
+
+        // --- 3. Interactive Canvas Background (Cyan/Blue Theme) ---
         const canvas = document.getElementById('canvas-bg');
         const ctx = canvas.getContext('2d');
-        let cw, ch;
-        function res() { cw = window.innerWidth; ch = window.innerHeight; canvas.width = cw; canvas.height = ch; }
-        window.addEventListener('resize', res); res();
-        let pts = [];
-        for(let i=0; i<60; i++) pts.push({x:Math.random()*cw, y:Math.random()*ch, vx:(Math.random()-0.5)*0.5, vy:(Math.random()-0.5)*0.5});
-        function draw() {
-            ctx.clearRect(0,0,cw,ch);
-            pts.forEach(p => {
-                p.x+=p.vx; p.y+=p.vy;
-                if(p.x<0||p.x>cw) p.vx*=-1; if(p.y<0||p.y>ch) p.vy*=-1;
-                ctx.fillStyle="rgba(0,240,255,0.3)"; ctx.beginPath(); ctx.arc(p.x,p.y,1,0,Math.PI*2); ctx.fill();
-            });
-            requestAnimationFrame(draw);
-        }
-        draw();
+        let canvasW, canvasH; 
+        let particles = [];
 
+        function resizeCanvas() {
+            canvasW = window.innerWidth;
+            canvasH = window.innerHeight;
+            canvas.width = canvasW;
+            canvas.height = canvasH;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvasW;
+                this.y = Math.random() * canvasH;
+                this.vx = (Math.random() - 0.5) * 0.3; 
+                this.vy = (Math.random() - 0.5) * 0.3;
+                this.size = Math.random() * 2;
+                this.alpha = Math.random() * 0.5 + 0.1;
+            }
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x < 0 || this.x > canvasW) this.vx *= -1;
+                if (this.y < 0 || this.y > canvasH) this.vy *= -1;
+            }
+            draw() {
+                ctx.fillStyle = `rgba(0, 240, 255, ${this.alpha})`; 
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 60; i++) particles.push(new Particle());
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, canvasW, canvasH);
+            
+            particles.forEach((p, index) => {
+                p.update();
+                p.draw();
+                
+                // Connect particles close to mouse
+                const dx = mouseX - p.x;
+                const dy = mouseY - p.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < 250) {
+                    ctx.strokeStyle = `rgba(0, 240, 255, ${0.15 * (1 - distance/250)})`; 
+                    ctx.lineWidth = 0.5;
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(mouseX, mouseY); 
+                    ctx.stroke();
+                }
+
+                // Connect to other particles
+                for (let j = index + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const d2 = Math.sqrt((p.x - p2.x)**2 + (p.y - p2.y)**2);
+                    if (d2 < 100) {
+                        ctx.strokeStyle = `rgba(0, 150, 255, ${0.1 * (1 - d2/100)})`; 
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(animateCanvas);
+        }
+        animateCanvas();
+
+
+        // --- 4. Main Site Animations (GSAP) ---
         function initAnimations() {
             gsap.registerPlugin(ScrollTrigger);
-            gsap.to(".reveal-text span.inline-block", { y: 0, duration: 1.5, stagger: 0.15, ease: "power4.out" });
-            gsap.to(".reveal-opacity", { opacity: 1, y: 0, duration: 1.5, delay: 0.8 });
-            gsap.to(".marquee-content", { xPercent: -20, scrollTrigger: { trigger: "#about", scrub: 1 } });
-            gsap.to(".service-card", { scrollTrigger: "#services", y: 0, opacity: 1, duration: 1, stagger: 0.2 });
+
+            // Hero Text Reveal
+            gsap.to(".reveal-text span.inline-block", {
+                y: 0,
+                duration: 1.5,
+                stagger: 0.15,
+                ease: "power4.out"
+            });
+            gsap.to(".reveal-opacity", {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                delay: 0.8,
+                ease: "power2.out"
+            });
+
+            // Split Text Animation for paragraphs (VISION)
+            const splitText = document.querySelectorAll('.split-text');
+            splitText.forEach(text => {
+                gsap.fromTo(text, 
+                    { y: 30, opacity: 0 },
+                    {
+                        scrollTrigger: {
+                            trigger: text,
+                            start: "top 85%",
+                        },
+                        y: 0,
+                        opacity: 1,
+                        duration: 1.2,
+                        ease: "power3.out"
+                    }
+                );
+            });
+
+            // Marquee Animation
+            gsap.to(".marquee-content", {
+                xPercent: -20,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: "#about",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+
+            // Service Cards
+            const cards = document.querySelectorAll(".service-card");
+            gsap.to(cards, {
+                scrollTrigger: {
+                    trigger: "#services",
+                    start: "top 80%"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out",
+                onComplete: () => {
+                    cards.forEach(c => c.classList.add('visible'));
+                }
+            });
         }
 
+        // --- 5. Menu Toggle ---
         const menuBtn = document.getElementById('menu-btn');
         const menuOverlay = document.getElementById('menu-overlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
+        let isMenuOpen = false;
+
         menuBtn.addEventListener('click', () => {
-            const isOpen = document.body.classList.toggle('menu-open');
-            gsap.to(menuOverlay, { clipPath: isOpen ? "polygon(0 0, 100% 0, 100% 100%, 0 100%)" : "polygon(0 0, 100% 0, 100% 0, 0 0)", duration: 0.8 });
-            gsap.to(".menu-link", { y: isOpen ? 0 : 10, opacity: isOpen ? 1 : 0, stagger: 0.1 });
+            isMenuOpen = !isMenuOpen;
+            document.body.classList.toggle('menu-open', isMenuOpen);
+            
+            if (isMenuOpen) {
+                gsap.to(menuOverlay, { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 0.8, ease: "power4.inOut" });
+                gsap.to(menuLinks, { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, delay: 0.4 });
+                menuBtn.querySelector('span:first-child').innerText = "CLOSE";
+            } else {
+                gsap.to(menuLinks, { y: 10, opacity: 0, duration: 0.3 });
+                gsap.to(menuOverlay, { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", duration: 0.8, ease: "power4.inOut", delay: 0.2 });
+                menuBtn.querySelector('span:first-child').innerText = "MENU";
+            }
+        });
+        
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                document.body.classList.remove('menu-open');
+                gsap.to(menuLinks, { y: 10, opacity: 0, duration: 0.3 });
+                gsap.to(menuOverlay, { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", duration: 0.8, ease: "power4.inOut", delay: 0.2 });
+                menuBtn.querySelector('span:first-child').innerText = "MENU";
+            });
         });
 
         lucide.createIcons();
